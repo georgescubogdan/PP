@@ -1,0 +1,93 @@
+12x8x8 elements, degree 8x10x11, nb procs 1
+CPU:   93.5 | SYSTEM:    0.1 | ELAPSED:   94.0
+
+12x12x12 elements, degree 9x10x11, nb procs 1
+CPU:  318.6 | SYSTEM:    0.3 | ELAPSED:  334.5
+
+12x8x8 elements, degree 8x10x11, nb procs 1
+CPU:   72.3 | SYSTEM:    0.2 | ELAPSED:   72.6
+
+10x10x10 elements, degree 7x8x9, nb procs 1
+CPU:   51.8 | SYSTEM:    0.1 | ELAPSED:   51.9
+
+12x8x8 elements, degree 8x10x11, nb procs 1
+CPU:   65.1 | SYSTEM:    0.1 | ELAPSED:   65.2
+
+10x10x10 elements, degree 7x8x9, nb procs 1
+CPU:   51.5 | SYSTEM:    0.1 | ELAPSED:   51.6
+
+3x3x3 elements, degree 3x3x3, nb procs 1
+CPU:    0.1 | SYSTEM:    0.0 | ELAPSED:    0.1
+
+3x3x3 elements, degree 3x3x3, nb procs 1
+CPU:    0.1 | SYSTEM:    0.0 | ELAPSED:    0.1
+
+5x5x5 elements, degree 3x3x3, nb procs 1
+CPU:    0.6 | SYSTEM:    0.0 | ELAPSED:    0.6
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   26.2 | SYSTEM:    0.0 | ELAPSED:   26.2
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   26.1 | SYSTEM:    0.0 | ELAPSED:   26.1
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   27.0 | SYSTEM:    0.0 | ELAPSED:   27.1
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   27.1 | SYSTEM:    0.0 | ELAPSED:   27.1
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   28.6 | SYSTEM:    0.0 | ELAPSED:   28.7
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   28.7 | SYSTEM:    0.0 | ELAPSED:   28.7
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.1 | SYSTEM:    0.0 | ELAPSED:   33.2
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.2 | SYSTEM:    0.0 | ELAPSED:   33.2
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.2 | SYSTEM:    0.0 | ELAPSED:   33.2
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.2 | SYSTEM:    0.0 | ELAPSED:   33.3
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.3 | SYSTEM:    0.0 | ELAPSED:   33.3
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.3 | SYSTEM:    0.0 | ELAPSED:   33.4
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.2 | SYSTEM:    0.0 | ELAPSED:   33.2
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   33.4 | SYSTEM:    0.0 | ELAPSED:   33.4
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   26.1 | SYSTEM:    0.0 | ELAPSED:   26.1
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   26.1 | SYSTEM:    0.0 | ELAPSED:   26.1
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   26.2 | SYSTEM:    0.0 | ELAPSED:   26.2
+
+10x10x10 elements, degree 5x5x5, nb procs 1
+CPU:   26.2 | SYSTEM:    0.0 | ELAPSED:   26.2
+
+10x10x10 elements, degree 5x5x5, nb procs 2
+CPU:   15.1 | SYSTEM:    0.1 | ELAPSED:   15.1
+
+10x10x10 elements, degree 5x5x5, nb procs 4
+CPU:   10.0 | SYSTEM:    0.0 | ELAPSED:   10.0
+
+10x10x10 elements, degree 5x5x5, nb procs 8
+CPU:    7.8 | SYSTEM:    0.0 | ELAPSED:    7.8
+
+10x10x10 elements, degree 5x5x5, nb procs 10
+CPU:    7.5 | SYSTEM:    0.0 | ELAPSED:    7.5
+

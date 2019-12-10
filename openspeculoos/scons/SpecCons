@@ -1,0 +1,80 @@
+import os
+import sys
+import glob
+
+argdict = dict(ARGLIST)
+
+#  default values
+optimize    = 'true'
+debug       = 'false'
+platform    = 'GNU'
+serialCXX   = 'g++'
+parallelCXX = 'mpicxx'
+optimFlags  = '-O3'
+debugFlags  = '-g'
+includepath = ''
+libpath     = ''
+libs        = ''
+
+speculoos_root      = argdict['speculoos_root']
+target              = argdict['target']
+parallel            = argdict['parallel'].lower() == 'true'
+
+try:
+    optimize            = argdict['optimize'].lower() == 'true'
+    debug               = argdict['debug'].lower() == 'true'
+    platform            = argdict['platform']
+    serialCXX           = argdict['serialCXX']
+    parallelCXX         = argdict['parallelCXX']
+    optimFlags          = Split(argdict['optimFlags'])
+    debugFlags          = Split(argdict['debugFlags'])
+    includepath         = argdict['includepath']
+    libpath             = argdict['libpath']
+    libs                = argdict['libs']
+except:
+    pass
+
+if optimize:
+    flags = optimFlags
+else:
+    flags = []
+
+if debug:
+    flags = debugFlags
+
+if parallel:
+    compiler = parallelCXX
+else:
+    compiler = serialCXX
+
+env = Environment ( ENV       = os.environ,
+                    CXX       = compiler,
+                    CXXFLAGS  = flags,
+                    CPPPATH   = Split(includepath),
+                    LIBPATH   = Split(libpath),
+                    LIBS      = Split(libs) )
+
+env.Append(CXXFLAGS = ['-D'+platform])
+env.Append(CPPPATH = [speculoos_root+'/src'])
+
+if parallel:
+    env.Append(CXXFLAGS = ['-DPARALLEL'])
+
+
+sourceFiles = []
+for srcDir in glob.glob(speculoos_root+'/src/*'):
+    sourceFiles.extend(glob.glob(srcDir+'/*.cxx'))
+
+if parallel:
+    speculoos_library = env.Library( target  = speculoos_root+'/lib/speculoos_mpi',
+                                     source  = sourceFiles )
+
+else:
+    speculoos_library = env.Library( target  = speculoos_root+'/lib/speculoos',
+                                     source  = sourceFiles )
+
+local_objects = env.Object(source = target)
+
+all_objects = local_objects + speculoos_library
+
+env.Program(all_objects)
